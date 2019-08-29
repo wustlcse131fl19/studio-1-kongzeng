@@ -13,10 +13,17 @@ public class Ordered {
 		int y = ap.nextInt("Value for y?");
 		int z = ap.nextInt("Value for z?");
 
+
+		boolean isOrdered = ((x>y&&y>z)||(x<y&&y<z));
+		System.out.println(isOrdered);
+
+		/*
+		Second solution:
 		boolean isOrdered1 = x > y;
 		boolean isOrdered2 = y > z;
 		boolean isOrdered = isOrdered1 == isOrdered2;
 		System.out.println(isOrdered);
+		 */
 
 
 	}
